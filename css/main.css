@@ -1,0 +1,8 @@
+/* main.css */
+@import url("base.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("about.css");
+@import url("contact.css");
+@import url("project.css");
+@import url("responsive.css");

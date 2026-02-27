@@ -1,0 +1,27 @@
+/* ==== RESPONSIVE ====*/
+
+/* ====MOBILE FIRST ====*/
+@media (max-width: 768) {
+    .tech-grid {
+        margin: 0 auto;
+    }
+
+    .tech-item {
+        align-items: center;
+    }
+
+    .tech-item span {
+        text-align: center;
+    }
+}
+
+/* ==== DESKTOP ==== */
+@media (min-width: 769px) {
+    .tech-grid {
+        margin: 0;
+    }
+
+    .tech-item span {
+        text-align: left;
+        }
+}

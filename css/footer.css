@@ -1,0 +1,30 @@
+/* ==== FOOTER ==== */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #111; /* opcional */
+  padding: 20px;
+}
+
+footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #bbb;
+  text-decoration: none;
+}
+
+footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;       /* deixa circular */
+  background-color: #222;   /* fundo para destacar */
+  padding: 6px;             /* espaço interno */
+}
+
+footer p {
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
