@@ -1,13 +1,50 @@
 /* ==== HEADER ==== */
 header img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid #5bbe42;
+text-align: center;
+margin-top: 40px;
 }
 
-/* ==== NAVEGAÇÃO ==== */
+header img {
+width: 140px;
+border-radius: 50%;
+border: 3px solid #00ff88;
+box-shadow:
+0 0 10px #00ff88,
+0 0 20px #00ff88,
+0 0 40px #00ff88;
+}
+
+header img:hover {
+transform: scale(1.08);
+transition: 0.3s;
+}
+
+/* NAVEGAÇÃO */
+
+nav a{ 
+transition:0.3s;
+}
+
 nav a:hover {
-    color: #5bbE42;
+color:#5bbE42;
+text-shadow:0 0 8px #5bbE42;
+} 
+
+/* Centralização do nome e função, de acordo com a foto */
+header {
+text-align: center;
+margin-top: 40px;
 }
 
+header h1 {
+margin-top: 15px;
+font-size: 32px;
+font-weight: 600;
+}
+
+header h2{ 
+font-size: 20px;
+font-weight: 300;
+letter-spacing: 1px;
+color:#bfbfbf;
+}
