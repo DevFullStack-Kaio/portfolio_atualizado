@@ -3,20 +3,53 @@
    Autor: Vanderlei Jose da Silva
    Descrição: Estilos para ícones
    =========================== */
-.tecnologias {
-  margin-top: 40px;
-}
-
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
-  gap: 24px;
-  max-width: 720px;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  max-width: 900px;
   margin: 0 auto;
-  justify-content: start; 
- }
+}
 
- /* Mobile (até 480px) */ 
+.icon-box {
+  background-color: #111;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  gap: 8px;
+  box-shadow: 0 0 6px rgba(0,255,136,0.6),
+              0 0 12px rgba(0,255,136,0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.icon-box img {
+  width: 50px;
+  height: auto;
+  transition: transform 0.25s ease;
+}
+
+.icon-box span {
+  font-size: 0.9rem;
+  color: #bbb;
+  text-align: center;
+}
+
+.icon-box:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 0 12px rgba(91, 190, 66, 0.6);
+}
+
+.icon-box:hover img {
+  transform: scale(1.15);
+}
+
+
+
+/* Mobile (até 480px) */ 
  @media (max-width: 480px) { 
   .tech-grid { 
     grid-template-columns: repeat(2, 1fr); 
@@ -26,77 +59,30 @@
 /* Tablet (481px até 768px) */ 
 @media (min-width: 481px) and (max-width: 768px) { 
   .tech-grid { 
-    grid-template-columns: repeat(4, 1fr); 
+    grid-template-columns: repeat(3, 1fr); 
   } 
 } 
 
 /* Desktop (769px em diante) */ 
 @media (min-width: 769px) { 
   .tech-grid { 
-    grid-template-columns: repeat(6, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
   } 
 }  
 
-
-.tech-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-
 /* ==== Card do ícone ==== */
 .tech-item .icon-box {
- width: 80px; /* largura fixa para alinhar */ 
- background-color: #111; 
- border-radius: 12px; 
- display: flex; flex-direction: column; /* ícone em cima, texto embaixo */ align-items: center; justify-content: center; padding: 10px; /* espaço interno */ gap: 6px; /* espaço entre ícone e texto */ 
- filter: drop-shadow(0 0 6px rgba(0, 255, 0, 0.35)); 
- transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.tech-item .icon-box img { 
-  width: 40px; /* ajuste conforme seu layout */ 
-  height: auto; 
-}
-
-/* Imagem dentro do card */
-.tech-item {
+  width: 100%; /* ocupa toda a largura da célula do grid */
+  max-width: 150px; /* limite opcional para não ficar muito grande */
+  background-color: #111;
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10px;
-}
-
-.tech-item .icon-box span { 
-  font-size: 0.9rem; color: #bbb; 
-  text-align: center; white-space: normal; /* permite quebra se necessário */ 
-}
-
-.icon-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.icon-container img {
-  width: 60px;   /* ajuste conforme seu layout */
-  height: auto;
-  margin-bottom: 5px;
-}
-
-.icon-text {
-  font-size: 0.9rem;
-  color: #bbb;
-  text-align: center;
-  white-space: normal;   /* permite quebra se necessário */
-}
-
-
-/* Hover REAL */
-.tech-item .icon-box:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 0 12px rgba(91, 190, 66, 0.6);
+  padding: 10px;
+  gap: 6px;
+  box-shadow: 0 0 6px rgba(0,255,136,0.6),
+              0 0 12px rgba(0,255,136,0.3);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
