@@ -19,7 +19,7 @@ footer a {
 footer img {
   width: 40px;
   height: 40px;
-  border-radius: 50%;       /* deixa circular */
+  object-fit: contain;      /* deixa circular */
   background-color: #222;   /* fundo para destacar */
   padding: 6px;             /* espaço interno */
 }
