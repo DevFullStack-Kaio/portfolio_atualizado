@@ -1,4 +1,5 @@
 /* ==== RESET / GLOBAL ==== */
+html,
 body{
 background-image: url("https://copilot.microsoft.com/th/id/BCO.68a6248f-581f-44c0-9688-162e3a5757c4.png");
 background-size: cover;
@@ -6,6 +7,7 @@ background-attachment: fixed;
 background-position: center;
 color:white;
 position: relative;
+overflow-x:hidden;
 }
 
 body::before {
@@ -160,6 +162,7 @@ p {
     margin-left:auto;
     margin-top:-670px;
     transform: translate(90px);
+    
 }
 
 .cursos-rapidos section{
@@ -192,37 +195,81 @@ p {
 
 
 /* ==== RESPONSIVIDADE ==== */
-@media (max-width: 992px) {
-    .sobre-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .container {
-        padding: 20px 24px 40px;
-    }
+@media (max-width:992px){
+
+.sobre-grid{
+    grid-template-columns:1fr;
 }
 
-@media (max-width: 768px) {
-    ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+.container{
+    padding:20px 24px 40px;
+}
 
-    .profile-pic {
-        width: 110px;
-        height: 110px;
-    }
+}
 
-    h1 {
-        font-size: 1.8rem;
-    }
 
-    h2 {
-        font-size: 1.2rem;
-    }
+@media (max-width:768px){
+    main{
 
-.cursos-rapidos {
-        flex-direction: column;
-    }
-}    
+display:flex;
+flex-direction:column;
 
+}
+
+ul{
+    flex-direction:column;
+    gap:10px;
+}
+
+
+.profile-pic{
+    width:110px;
+    height:110px;
+}
+
+
+h1{
+    font-size:1.8rem;
+}
+
+
+h2{
+    font-size:1.2rem;
+}
+
+
+/* cursos rápidos */
+.cursos-rapidos{
+    width:100%;
+    margin-top:40px;
+    margin-left:0;
+    transform:none;
+    gap:20px;
+
+}
+
+
+/* objetivos */
+
+.objetivos{
+    width:90%;
+    margin:30px auto;
+
+}
+
+
+/* textos */
+
+section{
+    width:100%;
+}
+
+
+footer{
+    flex-wrap:wrap;
+    gap:15px;
+
+}
+
+}
