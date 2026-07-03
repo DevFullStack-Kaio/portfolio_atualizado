@@ -167,16 +167,10 @@ p {
 
 .cursos-rapidos section{
     background:rgba(0,0,0,0.35);
-
     padding:20px;
-
     border-radius:14px;
-
     backdrop-filter:blur(4px);
-
-    box-shadow:
-        0 4px 18px rgba(0,0,0,0.25);
-
+    box-shadow: 0 4px 18px rgba(0,0,0,0.25);
     transition:
         transform .2s ease,
         box-shadow .2s ease;
@@ -187,7 +181,6 @@ p {
 .cursos-rapidos section:hover{
 
     transform:translateY(-4px);
-
     box-shadow:
         0 8px 24px rgba(0,0,0,0.35);
 

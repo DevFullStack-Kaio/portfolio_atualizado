@@ -1,13 +1,16 @@
 /* ==== RESPONSIVE ====*/
 
 /* ====MOBILE FIRST ====*/
-@media (max-width: 768) {
+@media (max-width: 768px) {
     .tech-grid {
+        display: grid;
+        grid-template-columns: 1fr; /* força uma coluna */
         margin: 0 auto;
     }
 
     .tech-item {
         align-items: center;
+        justify-content: center;
     }
 
     .tech-item span {
