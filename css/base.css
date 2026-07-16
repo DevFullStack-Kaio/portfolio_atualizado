@@ -70,8 +70,9 @@ p {
 }
 
 /* ==== HERO / TOPO ==== */
-.hero {
-    margin: 30px 0 40px;
+.hero { 
+    margin: 10px 0 20px; 
+    margin-bottom: 20px;
 }
 
 .profile-pic {
@@ -123,9 +124,8 @@ p {
 ================================== */
 
 .objetivos{
-
     max-width:700px;
-    margin:40px auto 60px auto;
+    margin:15px auto 15px auto;
     padding:25px;
     text-align:center;
     background:rgba(0,0,0,.28);
@@ -171,7 +171,7 @@ p {
     border-radius:14px;
     backdrop-filter:blur(4px);
     box-shadow: 0 4px 18px rgba(0,0,0,0.25);
-    transition:
+    transition: 
         transform .2s ease,
         box-shadow .2s ease;
 
@@ -179,10 +179,8 @@ p {
 
 
 .cursos-rapidos section:hover{
-
     transform:translateY(-4px);
-    box-shadow:
-        0 8px 24px rgba(0,0,0,0.35);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
 
 }
 
@@ -239,9 +237,7 @@ h2{
     margin-left:0;
     transform:none;
     gap:20px;
-
 }
-
 
 /* objetivos */
 
