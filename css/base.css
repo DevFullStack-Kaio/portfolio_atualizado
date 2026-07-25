@@ -1,7 +1,7 @@
 /* ==== RESET / GLOBAL ==== */
 html,
 body{
-background-image: url("https://copilot.microsoft.com/th/id/BCO.68a6248f-581f-44c0-9688-162e3a5757c4.png");
+background-image: url("../img/background-tech.jpg");
 background-size: cover;
 background-attachment: fixed;
 background-position: center;
@@ -39,22 +39,35 @@ nav {
     z-index: 10;
 }
 
-h1 {
-    color: #5bbe42;
-    margin-top: 15px;
-    margin-bottom: 10px;
+h1{
+    color:#5bbe42;
+    font-size:2.8rem;
+    font-weight:800;
+    margin-top:15px;
+    margin-bottom:8px;
+
+    text-shadow:0 0 12px rgba(91,190,66,.45);
 }
 
 h2 {
     color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 700;
     margin-bottom: 20px;
-    font-size: 1.4rem;
+    padding-left: 12px;
     border-left: 4px solid #5bbe42;
-    padding-left: 10px;
+    text-shadow: 0 2px 8px rgba(0,0,0,.45);
+}
+
+.cargo{
+    color:#ffffff;
+    font-size:1.9rem;
+    font-weight:700;
 }
 
 p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 1.6;
 }
 
 /* ==== UTILITARIOS ==== */
@@ -213,10 +226,27 @@ ul{
     gap:10px;
 }
 
-
 .profile-pic{
-    width:110px;
-    height:110px;
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:50%;
+    border:4px solid #00ff88;
+
+    box-shadow:0 0 25px rgba(0,255,136,.6);
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.profile-pic:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+        0 0 35px rgba(0,255,136,.9);
+
 }
 
 
