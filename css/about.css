@@ -27,27 +27,30 @@
 }
 
 .icon-box img {
-  width: 50px;
+  width: 56px;
   height: auto;
-  transition: transform 0.25s ease;
+  transition: transform 0.3s ease;
 }
 
 .icon-box span {
-  font-size: 0.9rem;
-  color: #bbb;
-  text-align: center;
+   color:#ffffff;
+   font-size:.95rem;
+   font-weight:600;
+   text-align:center;
 }
 
 .icon-box:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 0 12px rgba(91, 190, 66, 0.6);
+  transform: 
+      translateY(-6px) 
+      scale(1.06);
+    box-shadow: 
+      0 0 15px rgba(91, 190, 66, .65),
+      0 0 30px rgba(91,190, 66, .35);
 }
 
 .icon-box:hover img {
-  transform: scale(1.15);
+  transform: scale(1.18);
 }
-
-
 
 /* Mobile (até 480px) */ 
  @media (max-width: 480px) { 
@@ -70,19 +73,3 @@
   } 
 }  
 
-/* ==== Card do ícone ==== */
-.tech-item .icon-box {
-  width: 100%; /* ocupa toda a largura da célula do grid */
-  max-width: 150px; /* limite opcional para não ficar muito grande */
-  background-color: #111;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  gap: 6px;
-  box-shadow: 0 0 6px rgba(0,255,136,0.6),
-              0 0 12px rgba(0,255,136,0.3);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
