@@ -1,5 +1,16 @@
-/* ==== RESPONSIVE ====*/
+/* ==========================================================
+   ARQUIVO   : responsive.css
 
+   DESCRIÇÃO
+   ----------
+   Ajustes para dispositivos móveis e tablets.
+
+   RESPONSABILIDADES
+   • Breakpoints
+   • Layout responsivo
+   • Ajustes de tipografia
+   • Ajustes de imagens
+========================================================== */
 /* ====MOBILE FIRST ====*/
 @media (max-width: 768px) {
     .tech-grid {

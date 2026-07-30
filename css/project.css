@@ -1,5 +1,17 @@
-/* ==== RESET / GLOBAL ==== */
-body {
+/* ==========================================================
+   ARQUIVO   : project.css
+
+   DESCRIÇÃO
+   ----------
+   Página de projetos.
+
+   RESPONSABILIDADES
+   • Cards dos projetos
+   • Imagens
+   • Botões
+   • Links
+   • Hover
+========================================================== */
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;

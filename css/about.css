@@ -1,8 +1,22 @@
-/* ===========================
-   SEÇÃO: Tecnologias (About)
-   Autor: Vanderlei Jose da Silva
-   Descrição: Estilos para ícones
-   =========================== */
+/* ==========================================================
+   ARQUIVO   : about.css
+   PROJETO   : Portfólio Pessoal
+   AUTOR     : Vanderlei Jose da Silva
+
+   DESCRIÇÃO
+   ----------
+   Estilos específicos da página "Sobre Mim".
+
+   RESPONSABILIDADES
+   • Grid das tecnologias
+   • Cards
+   • Ícones
+   • Hover
+   • Responsividade
+
+   Última atualização:
+   Julho / 2026
+========================================================== */
 .tech-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));

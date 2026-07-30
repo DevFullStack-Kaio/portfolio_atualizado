@@ -1,4 +1,16 @@
-/* ==== HEADER ==== */
+/* ==========================================================
+   ARQUIVO   : header.css
+
+   DESCRIÇÃO
+   ----------
+   Cabeçalho do site.
+
+   RESPONSABILIDADES
+   • Foto de perfil
+   • Nome
+   • Cargo
+   • Navegação
+========================================================== */
 header img {
 text-align: center;
 margin-top: 40px;

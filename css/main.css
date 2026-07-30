@@ -1,4 +1,38 @@
-/* main.css */
+/* ==========================================================
+   ARQUIVO   : main.css
+   PROJETO   : Portfólio Pessoal
+   AUTOR     : Vanderlei Jose da Silva
+
+   DESCRIÇÃO
+   ----------
+   Arquivo principal responsável por importar todos os
+   arquivos CSS do projeto.
+
+   ORDEM DE IMPORTAÇÃO
+   -------------------
+   1. base.css
+      Estilos globais
+
+   2. header.css
+      Cabeçalho e menu de navegação
+
+   3. footer.css
+      Rodapé
+
+   4. about.css
+      Página Sobre Mim
+
+   5. contact.css
+      Página Contatos
+
+   6. project.css
+      Página Projetos
+
+   7. responsive.css
+      Ajustes para dispositivos móveis
+
+========================================================== */
+
 @import url("base.css");
 @import url("header.css");
 @import url("footer.css");
@@ -6,3 +40,7 @@
 @import url("contact.css");
 @import url("project.css");
 @import url("responsive.css");
+
+/* ==========================================================
+   FIM DO ARQUIVO main.css
+========================================================== */

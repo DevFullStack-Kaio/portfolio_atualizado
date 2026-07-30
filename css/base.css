@@ -1,4 +1,26 @@
-/* ==== RESET / GLOBAL ==== */
+/* ==========================================================
+   ARQUIVO   : base.css
+   PROJETO   : Portfólio Pessoal
+   AUTOR     : Vanderlei Jose da Silva
+
+   DESCRIÇÃO
+   ----------
+   Este arquivo contém os estilos globais do projeto.
+
+   RESPONSABILIDADES
+   • Plano de fundo
+   • Tipografia
+   • Cores principais
+   • Layout global
+   • Navegação
+   • Hero
+   • Objetivos
+   • Cursos rápidos
+   • Responsividade global
+
+   Última atualização:
+   Julho / 2026
+========================================================== */
 html,
 body{
 background-image: url("../img/background-tech.jpg");
@@ -292,3 +314,7 @@ footer{
 }
 
 }
+
+/* ==========================================================
+   FIM DO ARQUIVO base.css
+========================================================== */
