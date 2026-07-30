@@ -1,89 +1,271 @@
 /* ==========================================================
-   ARQUIVO   : about.css
-   PROJETO   : Portfólio Pessoal
-   AUTOR     : Vanderlei Jose da Silva
+   ARQUIVO      : about.css
+   PROJETO      : Portfólio Pessoal
+   AUTOR        : Vanderlei Jose da Silva
 
    DESCRIÇÃO
-   ----------
-   Estilos específicos da página "Sobre Mim".
+   ----------------------------------------------------------
+   Estilos específicos da página "Sobre Mim", responsável
+   pela apresentação das tecnologias, ferramentas,
+   habilidades e interesses profissionais.
 
    RESPONSABILIDADES
-   • Grid das tecnologias
-   • Cards
-   • Ícones
-   • Hover
+   ----------------------------------------------------------
+   • Títulos principais da página
+   • Layout das categorias de tecnologias
+   • Grid responsivo dos ícones
+   • Cards das tecnologias
+   • Efeitos de hover
    • Responsividade
+   • Padronização visual da página
 
-   Última atualização:
+   DEPENDÊNCIAS
+   ----------------------------------------------------------
+   • base.css
+   • responsive.css
+
+   ÚLTIMA ATUALIZAÇÃO
+   ----------------------------------------------------------
    Julho / 2026
 ========================================================== */
-.tech-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
-  justify-items: center;
-  max-width: 900px;
-  margin: 0 auto;
+
+
+/* ==========================================================
+   TÍTULOS PRINCIPAIS DA PÁGINA
+========================================================== */
+
+h1{
+
+    color:#ffffff;
+
+    font-size:2.3rem;
+
+    font-weight:700;
+
+    margin-top:30px;
+
+    margin-bottom:18px;
+
+    padding-left:14px;
+
+    border-left:5px solid #5bbe42;
+
+    text-shadow:
+        0 3px 10px rgba(0,0,0,.45);
+
 }
 
-.icon-box {
-  background-color: #111;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  gap: 8px;
-  box-shadow: 0 0 6px rgba(0,255,136,0.6),
-              0 0 12px rgba(0,255,136,0.3);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+/* ==========================================================
+   TÍTULOS DAS CATEGORIAS
+========================================================== */
+
+.categoria-tecnologia{
+
+    margin-bottom:60px;
+
 }
 
-.icon-box img {
-  width: 56px;
-  height: auto;
-  transition: transform 0.3s ease;
+.categoria-tecnologia h2{
+
+    color:#ffffff;
+
+    font-size:1.8rem;
+
+    font-weight:700;
+
+    margin-bottom:12px;
+
+    padding-left:12px;
+
+    border-left:4px solid #5bbe42;
+
+    text-shadow:
+        0 2px 8px rgba(0,0,0,.45);
+
 }
 
-.icon-box span {
-   color:#ffffff;
-   font-size:.95rem;
-   font-weight:600;
-   text-align:center;
+.categoria-tecnologia p{
+
+    color:#d8d8d8;
+
+    line-height:1.7;
+
+    margin-bottom:25px;
+
 }
 
-.icon-box:hover {
-  transform: 
-      translateY(-6px) 
-      scale(1.06);
-    box-shadow: 
-      0 0 15px rgba(91, 190, 66, .65),
-      0 0 30px rgba(91,190, 66, .35);
+
+/* ==========================================================
+   GRID DAS TECNOLOGIAS
+========================================================== */
+
+.tech-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+
+    gap:24px;
+
+    justify-items:center;
+
+    max-width:1000px;
+
+    margin:0 auto;
+
 }
 
-.icon-box:hover img {
-  transform: scale(1.18);
+
+/* ==========================================================
+   CARD DA TECNOLOGIA
+========================================================== */
+
+.icon-box{
+
+    width:100%;
+
+    max-width:150px;
+
+    background:rgba(0,0,0,.35);
+
+    border:1px solid rgba(91,190,66,.30);
+
+    border-radius:16px;
+
+    backdrop-filter:blur(4px);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:18px;
+
+    gap:10px;
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease,
+        border-color .30s ease;
+
 }
 
-/* Mobile (até 480px) */ 
- @media (max-width: 480px) { 
-  .tech-grid { 
-    grid-template-columns: repeat(2, 1fr); 
-  } 
-} 
 
-/* Tablet (481px até 768px) */ 
-@media (min-width: 481px) and (max-width: 768px) { 
-  .tech-grid { 
-    grid-template-columns: repeat(3, 1fr); 
-  } 
-} 
+/* ==========================================================
+   ÍCONES
+========================================================== */
 
-/* Desktop (769px em diante) */ 
-@media (min-width: 769px) { 
-  .tech-grid { 
-    grid-template-columns: repeat(4, 1fr); 
-  } 
-}  
+.icon-box img{
 
+    width:60px;
+
+    height:60px;
+
+    object-fit:contain;
+
+    transition:transform .30s ease;
+
+}
+
+
+/* ==========================================================
+   TEXTO DOS ÍCONES
+========================================================== */
+
+.icon-box span{
+
+    color:#ffffff;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    text-align:center;
+
+}
+
+
+/* ==========================================================
+   HOVER DOS CARDS
+========================================================== */
+
+.icon-box:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.05);
+
+    border-color:#5bbe42;
+
+    box-shadow:
+        0 0 15px rgba(91,190,66,.55),
+        0 0 28px rgba(91,190,66,.30);
+
+}
+
+.icon-box:hover img{
+
+    transform:scale(1.15);
+
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+/* Smartphones */
+
+@media(max-width:480px){
+
+    h1{
+
+        font-size:1.9rem;
+
+    }
+
+    .categoria-tecnologia h2{
+
+        font-size:1.4rem;
+
+    }
+
+    .tech-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:18px;
+
+    }
+
+}
+
+
+/* Tablets */
+
+@media(min-width:481px) and (max-width:768px){
+
+    .tech-grid{
+
+        grid-template-columns:repeat(3,1fr);
+
+    }
+
+}
+
+
+/* Desktop */
+
+@media(min-width:769px){
+
+    .tech-grid{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+}
