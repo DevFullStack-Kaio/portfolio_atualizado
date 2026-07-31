@@ -1,18 +1,37 @@
 /* ==========================================================
-   ARQUIVO   : project.css
+   ARQUIVO      : project.css
+   PROJETO      : Portfólio Pessoal
+
+   AUTOR
+   ----------------------------------------------------------
+   Vanderlei Jose da Silva
 
    DESCRIÇÃO
-   ----------
-   Página de projetos.
+   ----------------------------------------------------------
+   Estilos da página "Projetos", responsável por apresentar
+   os principais projetos desenvolvidos durante a formação
+   acadêmica, estudos independentes e projetos pessoais.
 
    RESPONSABILIDADES
-   ------------------
+   ----------------------------------------------------------
+   • Layout da página Projetos
    • Cards dos projetos
-   • Imagens
-   • Botões
-   • Links
-   • Hover
+   • Grid responsivo
+   • Tecnologias utilizadas
+   • Hover dos cards
+   • Responsividade
+
+   DEPENDÊNCIAS
+   ----------------------------------------------------------
+   • base.css
+   • responsive.css
+
+   ÚLTIMA ATUALIZAÇÃO
+   ----------------------------------------------------------
+   Julho / 2026
+
 ========================================================== */
+h1{
     color: white;
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -31,8 +50,54 @@ a {
     text-decoration: none;
 }
 
-h1 {
-    color: #5bbE42;
+h2 {
+    color: #ffff;
+}
+
+.project-tech{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:12px;
+
+}
+
+.project-tech span{
+
+    background:rgba(91,190,66,.15);
+    border:1px solid rgba(91,190,66,.35);
+    color:#ffffff;
+    padding:8px 16px;
+    border-radius:22px;
+    font-size:.95rem;
+    font-weight:600;
+    transition:
+        background .30s ease,
+        transform .30s ease;
+
+}
+
+.project-tech span:hover{
+
+    background:#5bbe42;
+    color:#000;
+    transform:translateY(-2px);
+
+}
+
+.project-card{
+
+    margin-bottom:40px;
+
+}
+
+.project-buttons{
+
+    display:flex;
+    gap:15px;
+    margin-top:18px;
+    flex-wrap:wrap;
+
 }
 
 /* ==== UTILITÁRIOS ==== */ 

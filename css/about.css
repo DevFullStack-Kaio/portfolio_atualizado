@@ -37,19 +37,12 @@
 h1{
 
     color:#ffffff;
-
     font-size:2.3rem;
-
     font-weight:700;
-
     margin-top:30px;
-
     margin-bottom:18px;
-
     padding-left:14px;
-
     border-left:5px solid #5bbe42;
-
     text-shadow:
         0 3px 10px rgba(0,0,0,.45);
 
@@ -69,17 +62,11 @@ h1{
 .categoria-tecnologia h2{
 
     color:#ffffff;
-
     font-size:1.8rem;
-
     font-weight:700;
-
     margin-bottom:12px;
-
     padding-left:12px;
-
     border-left:4px solid #5bbe42;
-
     text-shadow:
         0 2px 8px rgba(0,0,0,.45);
 
@@ -88,9 +75,7 @@ h1{
 .categoria-tecnologia p{
 
     color:#d8d8d8;
-
     line-height:1.7;
-
     margin-bottom:25px;
 
 }
@@ -103,15 +88,10 @@ h1{
 .tech-grid{
 
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-
     gap:24px;
-
     justify-items:center;
-
     max-width:1000px;
-
     margin:0 auto;
 
 }
@@ -124,29 +104,17 @@ h1{
 .icon-box{
 
     width:100%;
-
     max-width:150px;
-
     background:rgba(0,0,0,.35);
-
     border:1px solid rgba(91,190,66,.30);
-
     border-radius:16px;
-
     backdrop-filter:blur(4px);
-
     display:flex;
-
     flex-direction:column;
-
     align-items:center;
-
     justify-content:center;
-
     padding:18px;
-
     gap:10px;
-
     transition:
         transform .30s ease,
         box-shadow .30s ease,
@@ -162,11 +130,8 @@ h1{
 .icon-box img{
 
     width:60px;
-
     height:60px;
-
     object-fit:contain;
-
     transition:transform .30s ease;
 
 }
@@ -179,11 +144,8 @@ h1{
 .icon-box span{
 
     color:#ffffff;
-
     font-size:.95rem;
-
     font-weight:600;
-
     text-align:center;
 
 }
@@ -198,9 +160,7 @@ h1{
     transform:
         translateY(-6px)
         scale(1.05);
-
     border-color:#5bbe42;
-
     box-shadow:
         0 0 15px rgba(91,190,66,.55),
         0 0 28px rgba(91,190,66,.30);
